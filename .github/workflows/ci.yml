@@ -23,7 +23,7 @@ jobs:
     if: always()
     steps:
       - name: Notify
-        uses: AleksandraGorska02/notify-github-action@v1.0.0
+        uses: AleksandraGorska02/JSON-tools
         with:
           to: ${{ secrets.GITHUB_REPOSITORY_OWNER }}
           token: ${{ secrets.GITHUB_TOKEN}}
