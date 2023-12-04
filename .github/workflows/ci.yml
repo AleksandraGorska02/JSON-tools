@@ -23,7 +23,7 @@ jobs:
     if: always()
     steps:
       - name: Notify
-        uses: 'AleksandraGorska02/JSON-tools'
+        uses: .github/workflows/ci.yml
         with:
           status: ${{ job.status }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
