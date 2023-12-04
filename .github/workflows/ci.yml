@@ -25,7 +25,6 @@ jobs:
       - name: Notify
         uses: AleksandraGorska02/JSON-tools
         with:
-          to: ${{ secrets.GITHUB_REPOSITORY_OWNER }}
-          token: ${{ secrets.GITHUB_TOKEN}}
-          message: "Build Success"
+          status: ${{ job.status }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
