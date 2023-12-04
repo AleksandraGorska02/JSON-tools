@@ -20,7 +20,7 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     needs: build
-    if: error()
+    if: always()
     steps:
       - name: Notify
         uses: AleksandraGorska02/JSON-tools@main
