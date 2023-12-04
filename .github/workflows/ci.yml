@@ -16,3 +16,16 @@ jobs:
           cache: maven
       - name: Validate, build and run tests
         run: mvn --batch-mode --update-snapshots verify
+
+  notify:
+    runs-on: ubuntu-latest
+    needs: build
+    if: always()
+    steps:
+      - name: Notify
+        uses: AleksandraGorska02/notify-github-action@v1.0.0
+        with:
+          to: ${{ secrets.GITHUB_REPOSITORY_OWNER }}
+          token: ${{ secrets.GITHUB_TOKEN
+          message: "Build Success"
+
