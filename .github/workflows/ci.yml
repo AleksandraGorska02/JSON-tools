@@ -23,7 +23,7 @@ jobs:
     if: always()
     steps:
       - name: Notify
-        uses: .github/workflows/ci.yml
+        uses: actions/setup-java@v2
         with:
           status: ${{ job.status }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
