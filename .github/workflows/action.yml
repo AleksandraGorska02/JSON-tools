@@ -1,0 +1,12 @@
+name: Java CI
+on: [push]
+jobs:
+ notify:
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Notify
+        uses: AleksandraGorska02/JSON-tools@main
+        with:
+          status: ${{ job.status }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
