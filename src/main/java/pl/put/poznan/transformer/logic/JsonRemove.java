@@ -1,9 +1,12 @@
 package pl.put.poznan.transformer.logic;
 
+import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
+import org.json.simple.JSONObject;
 
 
 
@@ -16,23 +19,26 @@ public class JsonRemove extends JsonDecorator{
     }
 
 
-  
+
 
 
     @Override
     public String getJson() throws JsonProcessingException {
-        try {
+
+         String json =  super.getJson();
             ObjectMapper mapper = new ObjectMapper();
-            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-            Object json = super.getJson();
-            String jstring = mapper.writeValueAsString(json);
-            JsonNode jsonNode = mapper.readTree(jstring);
+
+            JsonNode jsonNode = mapper.readTree(json);
             System.out.println(mapper.writeValueAsString(jsonNode));
-            String jsonMin = mapper.writeValueAsString(jsonNode);
-            return jsonMin;}
-        catch (Exception e){
-            return "error";
-        }
+
+            String s = mapper.writeValueAsString(jsonNode);
+            String s2 ="JsonRemove: "+ s;
+
+
+                     //usuniecie spacji
+            s2 = s2.replaceAll("\\s+","");
+
+        return         s2;
     }
 
 

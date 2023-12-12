@@ -17,15 +17,15 @@ public class JsonTransformerController {
     private static final Logger logger = LoggerFactory.getLogger(JsonTransformerController.class);
 
     @RequestMapping(method = RequestMethod.GET, produces = "application/json", consumes = "application/json")
-    public JsonComponent get(@RequestBody Map<String,Object> json) {
-        return new JsonComponent(json);
+    public String get(@RequestBody String json) {
+        return String.valueOf(new JsonComponent(json));
 
     }
     @RequestMapping(value ="/remove", method = RequestMethod.GET, produces = "application/json", consumes = "application/json")
-    public JsonComponent getRemove(@RequestBody Map<String,Object> json) throws JsonProcessingException {
+    public String getRemove(@RequestBody String json) throws JsonProcessingException {
         JsonComponent jsonComponent = new JsonComponent(json);
-        return new JsonRemove(jsonComponent);
-
+        JsonDecorator jsonDecorator = new JsonRemove(jsonComponent);
+        return jsonDecorator.getJson();
     }
     @RequestMapping(method = RequestMethod.POST, produces = "application/json",consumes = "application/json")
     public Object post(@RequestBody Map<String, Object> json) {

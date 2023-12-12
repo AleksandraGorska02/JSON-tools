@@ -11,7 +11,7 @@ public class JsonDecorator extends JsonComponent{
     }
 
     @Override
-    public Object getJson() throws JsonProcessingException {
+    public String getJson() throws JsonProcessingException {
         return jsonComponent.getJson();
     }
 }
