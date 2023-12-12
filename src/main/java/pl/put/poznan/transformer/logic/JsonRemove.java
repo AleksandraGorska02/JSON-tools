@@ -25,7 +25,7 @@ public class JsonRemove extends JsonDecorator{
     @Override
     public String getJson() throws JsonProcessingException {
 
-         String json =  super.getJson();
+         String json =  super.getJson().toString();
             ObjectMapper mapper = new ObjectMapper();
 
             JsonNode jsonNode = mapper.readTree(json);
@@ -38,7 +38,7 @@ public class JsonRemove extends JsonDecorator{
                      //usuniecie spacji
             s2 = s2.replaceAll("\\s+","");
 
-        return         s2;
+        return         s;
     }
 
 
