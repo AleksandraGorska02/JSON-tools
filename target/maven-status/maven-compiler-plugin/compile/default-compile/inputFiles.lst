@@ -1,3 +1,7 @@
-C:\Users\alxandra\Desktop\studia\semestr 5\IO\projekt\JSON-tools\src\main\java\pl\put\poznan\transformer\logic\TextTransformer.java
+C:\Users\alxandra\Desktop\studia\semestr 5\IO\projekt\JSON-tools\src\main\java\pl\put\poznan\transformer\logic\JsonDecorator.java
 C:\Users\alxandra\Desktop\studia\semestr 5\IO\projekt\JSON-tools\src\main\java\pl\put\poznan\transformer\app\TextTransformerApplication.java
-C:\Users\alxandra\Desktop\studia\semestr 5\IO\projekt\JSON-tools\src\main\java\pl\put\poznan\transformer\rest\TextTransformerController.java
+C:\Users\alxandra\Desktop\studia\semestr 5\IO\projekt\JSON-tools\src\main\java\pl\put\poznan\transformer\logic\JsonMini.java
+C:\Users\alxandra\Desktop\studia\semestr 5\IO\projekt\JSON-tools\src\main\java\pl\put\poznan\transformer\logic\JsonRemove.java
+C:\Users\alxandra\Desktop\studia\semestr 5\IO\projekt\JSON-tools\src\main\java\pl\put\poznan\transformer\logic\JsonExpand.java
+C:\Users\alxandra\Desktop\studia\semestr 5\IO\projekt\JSON-tools\src\main\java\pl\put\poznan\transformer\logic\JsonComponent.java
+C:\Users\alxandra\Desktop\studia\semestr 5\IO\projekt\JSON-tools\src\main\java\pl\put\poznan\transformer\rest\JsonTransformerController.java
