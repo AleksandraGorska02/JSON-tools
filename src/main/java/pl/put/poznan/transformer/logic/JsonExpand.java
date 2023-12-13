@@ -11,6 +11,10 @@ public class JsonExpand extends JsonDecorator{
         super(jsonComponent);
     }
 
+    /**
+     * Metoda zwracająca rozwinięty JSON
+
+     */
     @Override
     public String getJson() throws JsonProcessingException {
         String json =  super.getJson().toString();
