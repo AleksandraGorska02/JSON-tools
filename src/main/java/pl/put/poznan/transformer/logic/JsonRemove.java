@@ -29,7 +29,10 @@ public class JsonRemove extends JsonDecorator{
      * "title":"value",
      * "title2":"value2"
      * }
-     * usunie nam to klucz title
+     * usunie nam to klucz title i zwróci jsona
+     * {
+     * "title2":"value2"
+     * }
      */
     @Override
     public String getJson() throws JsonProcessingException {
