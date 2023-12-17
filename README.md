@@ -6,3 +6,4 @@ Aplikacja dla programistów, którzy potrzebują przeformatować lub filtrować 
 Po włączeniu aplikacji, uruchomi się ona na porcie 8080 na localhost.
 Natępnie należy wysłać rządanie ze strukturą danych zapisaną w formacie JSON na port 8080 a po ukośniku wpisać nazwę funkcji (do wyboru: expand, remove, mini). Jeśli nie wpisze się żadnej nazwy funkcji to zwrócone zostaną niezmienione dane wejściowe.
 
+http://localhost:8080/mini
