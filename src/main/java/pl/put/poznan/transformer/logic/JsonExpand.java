@@ -6,14 +6,23 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
+/**
+ * This class is a concrete decorator for a decorator pattern
+ */
 public class JsonExpand extends JsonDecorator{
+    /**
+     * Class constructor
+     * @param jsonComponent component object
+     * @throws JsonProcessingException thrown if invalid JSON format
+     */
     public JsonExpand(JsonComponent jsonComponent) throws JsonProcessingException {
         super(jsonComponent);
     }
 
     /**
-     * Metoda zwracająca rozwinięty JSON
-
+     * This method returns expanded JSON
+     * @return expanded JSON
+     * @throws JsonProcessingException thrown if invalid JSON format
      */
     @Override
     public String getJson() throws JsonProcessingException {

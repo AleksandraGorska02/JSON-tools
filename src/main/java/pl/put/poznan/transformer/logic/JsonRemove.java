@@ -5,11 +5,25 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
+/**
+ * This class is a concrete decorator for a decorator pattern
+ */
 public class JsonRemove extends JsonDecorator{
+
+    /**
+     * Class constructor
+     * @param jsonComponent component object
+     * @throws JsonProcessingException thrown if invalid JSON format
+     */
     public JsonRemove(JsonComponent jsonComponent) throws JsonProcessingException {
         super(jsonComponent);
     }
 
+    /**
+     *
+     * @param objectNode JSON object node
+     * @param key1 key to remove
+     */
     public void removeKey(ObjectNode objectNode, String key1) {
         objectNode.remove(key1);
         objectNode.forEach(node -> {
@@ -22,9 +36,9 @@ public class JsonRemove extends JsonDecorator{
     };
 
     /**
-     * Method that removes key from json
-     * @return json without key
-     *parametr do usunęcia podajemy w pierwszej lini jsona w formacie "remove":"key",
+     * This method removes key from JSON
+     * @return JSON without key
+     * parametr do usunęcia podajemy w pierwszej lini jsona w formacie "remove":"key",
      * np. {"remove":"title",
      * "title":"value",
      * "title2":"value2"
