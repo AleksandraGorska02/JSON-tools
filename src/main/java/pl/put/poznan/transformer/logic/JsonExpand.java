@@ -23,6 +23,11 @@ public class JsonExpand extends JsonDecorator{
      * This method returns expanded JSON
      * @return expanded JSON
      * @throws JsonProcessingException thrown if invalid JSON format
+     * this method is used to expand the json
+     * this function uses the gson library to read the json and then expand it
+     * gson.toJson(je) is used to convert the jsonElement to a string
+     * the string is then returned
+     *
      */
     @Override
     public String getJson() throws JsonProcessingException {

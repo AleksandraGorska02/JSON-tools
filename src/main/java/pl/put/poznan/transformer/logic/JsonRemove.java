@@ -23,6 +23,7 @@ public class JsonRemove extends JsonDecorator{
      *
      * @param objectNode JSON object node
      * @param key1 key to remove
+     *
      */
     public void removeKey(ObjectNode objectNode, String key1) {
         objectNode.remove(key1);
@@ -38,15 +39,19 @@ public class JsonRemove extends JsonDecorator{
     /**
      * This method removes key from JSON
      * @return JSON without key
-     * parametr do usunęcia podajemy w pierwszej lini jsona w formacie "remove":"key",
-     * np. {"remove":"title",
-     * "title":"value",
-     * "title2":"value2"
-     * }
-     * usunie nam to klucz title i zwróci jsona
-     * {
-     * "title2":"value2"
-     * }
+     * parameter to remove is given in the first line of json in the format "remove": "key",
+     *       e.g. { "remove": "title",
+     *       "title": "value",
+     *       "title2": "value2"
+     *       }
+     *       this will remove the title key for us and return a json
+     *       {
+     *       "title2": "value2"
+     *       }
+     *       this method uses the jackson library to read the json and then remove the key
+     *       mapper.writeValueAsString(jsonNode) is used to convert the jsonNode to a string
+     *       the string is then returned
+     *
      */
     @Override
     public String getJson() throws JsonProcessingException {

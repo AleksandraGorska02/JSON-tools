@@ -34,3 +34,16 @@ jobs:
           prerelease: true
           title: Release ${{ steps.tag_version.outputs.new_tag }}
           files: ${{ env.artifactPath }}/io-project-architecture-0.1.jar
+
+      - name: generate Javadoc
+        run: |
+          mvn site
+          echo "javadocPath=$(pwd)/target/site/apidocs" >> $GITHUB_ENV
+      - uses: actions/upload-artifact@v3
+        with:
+          name: JSON-tools-${{ env.RELEASE_VERSION }}.jar
+          path: ${{ env.artifactPath }}/JSON-tools-${{ env.RELEASE_VERSION }}.jar
+      - uses: actions/upload-artifact@v3
+        with:
+          name: JSON-tools-${{ env.RELEASE_VERSION }}-javadoc
+          path: ${{ env.javadocPath }}

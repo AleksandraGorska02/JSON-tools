@@ -24,6 +24,10 @@ public class JsonMini extends JsonDecorator{
      * This method returns minified JSON
      * @return minified JSON
      * @throws JsonProcessingException thrown if invalid JSON format
+     * this method is used to minify the json
+     * this function uses the jackson library to read the json and then minify it
+     * mapper.writeValueAsString(jsonNode) is used to convert the jsonNode to a string
+     * the string is then returned
      */
     @Override
     public String getJson() throws JsonProcessingException {
@@ -38,8 +42,6 @@ public class JsonMini extends JsonDecorator{
             String s2 ="JsonMini: "+ s;
 
 
-                     //usuniecie spacji
-          //  s2 = s2.replaceAll("\\s+","");
 
         return         s;
     }
