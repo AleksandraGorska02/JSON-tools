@@ -1,0 +1,7 @@
+pl\put\poznan\transformer\logic\JsonComponent.class
+pl\put\poznan\transformer\logic\JsonRemove.class
+pl\put\poznan\transformer\rest\JsonTransformerController.class
+pl\put\poznan\transformer\logic\JsonDecorator.class
+pl\put\poznan\transformer\logic\JsonMini.class
+pl\put\poznan\transformer\app\TextTransformerApplication.class
+pl\put\poznan\transformer\logic\JsonExpand.class
