@@ -25,15 +25,15 @@ jobs:
           echo "artifactPath=$(pwd)/target" >> $GITHUB_ENV
       - uses: actions/upload-artifact@v3
         with:
-          name: io-project-architecture-v0.0.12.jar
-          path: ${{ env.artifactPath }}/io-project-architecture-v0.0.12.jar
+          name: io-project-architecture-v0.0.17.jar
+          path: ${{ env.artifactPath }}/io-project-architecture-v0.0.17.jar
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: ${{ steps.tag_version.outputs.new_tag }}
           prerelease: true
           title: Release ${{ steps.tag_version.outputs.new_tag }}
-          files: ${{ env.artifactPath }}/io-project-architecture-v0.0.12.jar
+          files: ${{ env.artifactPath }}/io-project-architecture-v0.0.17.jar
       - name: generate Javadoc
         run: |
           mvn javadoc:javadoc
