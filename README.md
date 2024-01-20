@@ -6,7 +6,6 @@
 ## Spis treści
 * [Informacje ogólne](#Informacje-ogólne)
 * [Wykorzystane technologie](#Wykorzystane-technologie)
-* [Konfiguracja](#Konfiguracja)
 * [Użycie](#Użycie)
 * [Potencjalny rozwój na przyszłość](#Potencjalny-rozwój-na-przyszłość)
 
@@ -15,9 +14,6 @@
 Aplikacja dla programistów, którzy potrzebują przeformatować lub filtrować struktury danych zapisane w formacie JSON a także porównać ze soba struktury. JSON tools pozwala zarówno na zminifikowanie niezminifikowanej reprezentacji JSON, a także na operację odwrotną (z dodaniem wszelkich odstępów i nowych linii).
 
 ## Wykorzystane technologie
-
-
-## Konfiguracja
 
 
 ## Użycie
