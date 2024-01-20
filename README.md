@@ -14,7 +14,7 @@
 Aplikacja dla programistów, którzy potrzebują przeformatować lub filtrować struktury danych zapisane w formacie JSON a także porównać ze soba struktury. JSON tools pozwala zarówno na zminifikowanie niezminifikowanej reprezentacji JSON, a także na operację odwrotną (z dodaniem wszelkich odstępów i nowych linii).
 
 ## Wykorzystane technologie
-
+Do stworzenia aplikacji został wykorzystany Spring Framework.
 
 ## Użycie
 Po włączeniu aplikacji, uruchomi się ona na porcie 8080 na localhost.
