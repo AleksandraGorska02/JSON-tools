@@ -22,7 +22,7 @@ Aplikacja dla programistów, którzy potrzebują przeformatować lub filtrować 
 
 ## Użycie
 Po włączeniu aplikacji, uruchomi się ona na porcie 8080 na localhost.
-Natępnie należy wysłać rządanie do strony ze strukturą danych zapisaną w formacie JSON. Po ukośniku wpisać nazwę funkcji (do wyboru: expand, remove, mini). Jeśli nie wpisze się żadnej nazwy funkcji to zwrócone zostaną niezmienione dane wejściowe.
+Natępnie należy wysłać rządanie do strony, ze strukturą danych zapisaną w formacie JSON. Po ukośniku wpisać nazwę funkcji (do wyboru: expand, remove, mini). Jeśli nie wpisze się żadnej nazwy funkcji to zwrócone zostaną niezmienione dane wejściowe.
 
 ## Potencjalny rozwój na przyszłość
 * Stowrzenie większej ilości klas i metod testujących
