@@ -14,7 +14,7 @@
 
     <groupId>pl.put.poznan</groupId>
     <artifactId>io-project-architecture</artifactId>
-    <version>v0.0.17</version>
+    <version>v0.0.23</version>
 
 	<properties>
         <java.version>11</java.version>
